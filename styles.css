@@ -1,0 +1,51 @@
+/* Styles for Nabukeera Madina personal website */
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --accent:#1e3a8a;
+  --muted:#6b7280;
+  --radius:14px;
+  --gap:18px;
+  font-family: Inter, Arial, sans-serif;
+  color: #111827;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);font-size:16px;line-height:1.5}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+
+/* Header */
+.site-header{background:linear-gradient(90deg,var(--accent),#2563eb);color:#fff;padding:14px 0;border-bottom-left-radius:18px;border-bottom-right-radius:18px;box-shadow:0 6px 18px rgba(2,6,23,0.12)}
+.header-grid{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand h1{margin:0;font-size:1.5rem}
+.subtitle{margin:2px 0 0;font-size:0.9rem;opacity:0.95}
+.nav a{color:#fff;text-decoration:none;margin-left:14px;font-weight:600}
+.nav a:hover{text-decoration:underline}
+
+/* Hero section */
+.hero{display:flex;align-items:center;gap:24px;padding:26px 10px;flex-wrap:wrap}
+.photo-wrap{flex:0 0 160px;position:relative;text-align:center}
+.profile-photo{width:160px;height:160px;object-fit:cover;border-radius:50%;border:6px solid #fff;box-shadow:0 0 20px rgba(37,99,235,0.4),0 0 40px rgba(30,58,138,0.2)}
+.hero-text h2{margin:0 0 6px;font-size:1.4rem;color:var(--accent)}
+.hero-text p{margin:0;color:var(--muted)}
+
+/* Card */
+.card{background:var(--card);border-radius:var(--radius);padding:18px;margin:18px 0;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.section-title{margin:0 0 12px;font-size:1.2rem;color:var(--accent)}
+
+/* Schools grid */
+.schools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.school{background:#f3f4f6;border-radius:12px;padding:12px;text-align:center;font-weight:600}
+
+/* Work */
+.work-item{margin-bottom:14px}
+.work-item h4{margin:0;color:var(--accent)}
+.work-item p{margin:4px 0;color:var(--muted)}
+
+/* Footer */
+.site-footer{text-align:center;color:var(--muted);padding:14px 0;font-size:0.95rem}
+
+/* Responsive */
+@media(max-width:600px){
+  .hero{flex-direction:column;text-align:center}
+  .profile-photo{width:130px;height:130px}
+}
